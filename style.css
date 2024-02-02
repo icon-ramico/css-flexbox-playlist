@@ -1,15 +1,43 @@
-*{
-    font-family: verdana;
-    margin: 0;
+* {
+  font-family: verdana;
+  margin: 0;
 }
 
-body{
-    background: #eee;
+body {
+  background: #eee;
 }
 
-.wrapper{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #333;
 }
 
+.box {
+  height: 100px;
+  min-width: 100px;
+}
+.flex-container {
+  display: flex;
+}
+/* .flex-container::after{
+    clear: left;display: block;
+    content: '';
+} */
+.one {
+  background-color: #f00;
+  /* float: left; */
+  flex-grow: 1;
+}
+.two {
+  background-color: #00f;
+  /* float: left;*/
+  flex-grow: 1;
+}
+.three {
+  background-color: #008000;
+  /* float: left; */
+  flex-grow: 1;
+}
