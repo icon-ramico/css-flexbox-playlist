@@ -1,0 +1,36 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+.box {
+  height: 100px;
+  width: 320px;
+}
+.flex-container {
+  display: flex;
+}
+.one {
+  background-color: #f00;
+  flex-shrink: 1;
+}
+.two {
+  background-color: #00f;
+  flex-shrink: 2;
+}
+.three {
+  background-color: #008000;
+  flex-shrink: 3;
+}
