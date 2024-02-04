@@ -1,13 +1,13 @@
-*{
+* {
   font-family: verdana;
   margin: 0;
 }
 
-body{
+body {
   background: #eee;
 }
 
-.wrapper{
+.wrapper {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -15,16 +15,16 @@ body{
 
 /* menu base styles */
 
-nav{
+nav {
   background: #333;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   text-align: center;
   color: #fff;
@@ -32,23 +32,48 @@ nav a{
   padding: 10px;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: #555;
 }
 
 /* social menu base styles */
-
-/* flex styles */
-
-@media screen and (min-width: 768px){
-
-nav ul{
-  display: flex;
+.social {
+  max-width: 80px;
 }
-
-nav li{
+.social a {
+  text-indent: -10000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.social li {
   flex: 1 1 0;
+  margin: 0 auto;
 }
-    
-} /* end media 768 */
+a.tw {
+  background-image: url('./img/tw.png');
+}
+a.fb {
+  background-image: url('./img/fb.png');
+}
+/* flex styles */
+nav ul.social {
+  display: flex;
+  margin: 0 auto;
+}
 
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    flex: 1 1 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul.social {
+    margin: 0;
+  }
+} /* end media 768 */
