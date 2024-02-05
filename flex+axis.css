@@ -1,0 +1,43 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+.flex-container {
+  display: flex;flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+  flex-flow: column;
+  height: 550px;
+  justify-content: center}
+.box {
+  height: 100px;
+  flex:1 1 50;
+}
+.box:not(:first-child) {
+  margin-top:30px ;
+}
+
+.one {
+  background-color: #f00;
+}
+.two {
+  background-color: #00f;
+}
+.three {
+  background-color: #008000;
+  }
+.four {
+  background-color: #800080;
+  }
